@@ -19,11 +19,3 @@ namespace :db do
   end
 end
 
-task :environment do 
-  require "./config/environment.rb"
-end 
-
-desc "drop into pry"
-task :console => :environment do
-  Pry.start
-end
